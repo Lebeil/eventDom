@@ -86,18 +86,18 @@ let logoNav = document.getElementsByClassName("navbar-brand d-flex align-items-c
 var body = document.body
 
 
-let onLogoNav = function (e) {
-    if (e.key === "a") {
+let onLogoNav = function (event) {
+    if (event.key === "a") {
         body.className = ''
         body.classList.add("col-4");
 
-    } else if (e.key === "y") {
+    } else if (event.key === "y") {
         body.className = ''
         body.classList.add("col-4", "offset-md-4");
-    } else if (e.key === "p") {
+    } else if (event.key === "p") {
         body.className = ''
         body.classList.add("col-4", "offset-md-8");
-    } else if (e.key === "b") {
+    } else if (event.key === "b") {
         body.className = ''
     }
 }
